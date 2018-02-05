@@ -1,0 +1,19 @@
+{
+  "name": "html-starter-kit",
+  "version": "0.1.0",
+  "description": "The starter kit for creating HTML designs",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-file-include": "latest",
+    "browser-sync": "latest",
+    "gulp-watch": "latest",
+    "gulp-strip-comments": "latest",
+    "gulp-imagemin": "latest"
+  },
+  "author": "Dave Larkan",
+  "repository": "http://git.terminalfour.com/PS/html-cutups-starter-kit"
+}
