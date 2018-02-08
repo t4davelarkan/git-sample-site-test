@@ -9,11 +9,12 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background: white;
-  color: #333;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
+  background: rgba(31, 115, 155, 1);
 }
 body {
   padding-left: 1rem;
@@ -25,8 +26,8 @@ body {
   margin-top: 2rem;
   padding: 1rem;
   max-width: 75em;
-  border: 1px solid #d9d9d9;
-  background-color: #e9e9e9;
+  min-height: 90vh;
+  background-color: rgba(#000, 0.1);
   &:before,
   &:after {
     content: '';
@@ -45,8 +46,8 @@ body {
 .sidebar {
   width: calc(25% - 2px);
   float: right;
+  min-height: 87.5vh;
   padding: 0 1rem 1rem 1rem;
-  background: #fff;
-  border: 1px solid #d9d9d9;
+  background: rgba(#fff, 0.1);
 }
 /* Test */
