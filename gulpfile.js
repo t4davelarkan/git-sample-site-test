@@ -24,6 +24,7 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest("www-root/site-assets/css"))
+        .pipe(gulp.dest("git-integration/site-assets/css"))
         .pipe(browserSync.stream());
 });
 
@@ -42,7 +43,6 @@ gulp.task('move-for-git', [], function() {
 
 gulp.task('include-for-git', [], function() {
   gulp.src('development/html/page-layouts/**/*.html')
-
         .pipe(fileinclude({
           prefix: '@@',
           basepath: './git-integration/includes_stripped/'
