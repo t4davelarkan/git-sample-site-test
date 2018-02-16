@@ -12,12 +12,20 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: "San Francisco", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: rgb(31, 115, 155);
 }
 body {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+a {
+  color: white;
+  text-decoration-style: dotted;
+  &:hover {
+    text-decoration: none;
+    color: #ddd;
+  }
 }
 .container {
   margin-left: auto;
