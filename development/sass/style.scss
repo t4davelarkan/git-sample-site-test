@@ -27,6 +27,7 @@ body {
   max-width: 75em;
   border: 1px solid #d9d9d9;
   background-color: #e9e9e9;
+  border-radius: .25rem;
   &:before,
   &:after {
     content: '';
@@ -48,4 +49,5 @@ body {
   padding: 0 1rem 1rem 1rem;
   background: #fff;
   border: 1px solid #d9d9d9;
+  border-radius: .25rem;
 }
