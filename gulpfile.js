@@ -12,7 +12,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./www-root"
     });
 
-    gulp.watch("development/sass/**/*.scss", ['sass']);
+    gulp.watch("development/sass/**/*.scss", ['sass', 'sass-for-git']);
     gulp.watch("development/html/**/*.html", ['fileinclude','move-for-git', 'include-for-git']);
     gulp.watch("development/images/**/*.{jpg,png,gif}", ['move-images']);
     gulp.watch("www-root/**/*.*").on('change', browserSync.reload);
@@ -26,6 +26,13 @@ gulp.task('sass', function() {
         .pipe(gulp.dest("www-root/site-assets/css"))
         .pipe(gulp.dest("git-integration/site-assets/css"))
         .pipe(browserSync.stream());
+});
+
+gulp.task('sass-for-git', function() {
+    return gulp.src("development/sass/**/*.scss")
+        .pipe(sass())
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(gulp.dest("git-integration/site-assets/css"))
 });
 
 gulp.task('move-images', [], function() {

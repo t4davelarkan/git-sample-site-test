@@ -9,11 +9,20 @@
 <body>
 	<div class="container">
 		<main class="main-content">
-      <h1>Templates</h1>
-      <ul>
-        <li><a href="home.html">Homepage</a></li>
-      </ul>
-    </main>
-  </div>
+<!-- Hello -->
+<!-- @@@T4Parse = endHeader-->
+      @@include('./content-types/general-content/html.html',
+        {
+          "title": "This is a git integration demo.",
+          "html":"I really hope it works"
+        }
+      )
+<!-- @@@T4Parse = startFooter -->
+
+</main>
+<aside class="sidebar">
+	<p>Sidebar content</p>
+</aside>
+</div>
 </body>
 </html>
