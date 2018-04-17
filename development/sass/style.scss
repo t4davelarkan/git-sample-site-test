@@ -34,8 +34,8 @@ a {
   margin-top: 2rem;
   padding: 1rem;
   max-width: 75em;
-  border: 1px solid #d9d9d9;
-  background-color: #e9e9e9;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, .2);
   border-radius: .25rem;
   &:before,
   &:after {
@@ -57,7 +57,7 @@ a {
   float: right;
   min-height: 87.5vh;
   padding: 0 1rem 1rem 1rem;
-  background: #fff;
-  border: 1px solid #d9d9d9;
+  background: rgba(0, 0, 0, .2);
+  border: 1px solid transparent;
   border-radius: .25rem;
 }
